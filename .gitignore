@@ -1,0 +1,13 @@
+*.idea
+*.pyc
+*.sqlite3
+*.sqlite
+venv*/*
+/database/migrations/
+!/database/migrations/__init__.py
+.idea
+__pycache__/
+*.pyc
+/templates/static
+.env
+*.env*
