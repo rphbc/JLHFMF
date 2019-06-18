@@ -18,7 +18,9 @@ from django.urls import path, include
 from api.views import *
 
 urlpatterns = [
+    # Só é útil se tiver banco de dados ou sistema de autenticação
     # path('admin/', admin.site.urls),
+    path('', home, name='home'),
     path('retorna1/', return1, name='retorna_1'),
     path('retorna2/', return2, name='retorna_1'),
 ]

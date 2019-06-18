@@ -1,5 +1,6 @@
 import json
 
+from django.shortcuts import render
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
@@ -34,3 +35,7 @@ class Return2(APIView):
 
 
 return2 = Return2.as_view()
+
+
+def home(request):
+    return render(request, 'home.html')
