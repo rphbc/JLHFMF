@@ -23,4 +23,5 @@ urlpatterns = [
     path('', home, name='home'),
     path('retorna1/', return1, name='retorna_1'),
     path('retorna2/', return2, name='retorna_1'),
+    path('upload/', simple_upload, name='retorna_1'),
 ]
