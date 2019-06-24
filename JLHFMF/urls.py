@@ -19,9 +19,11 @@ from api.views import *
 
 urlpatterns = [
     # Só é útil se tiver banco de dados ou sistema de autenticação
-    # path('admin/', admin.site.urls),
+    path('admin/', admin.site.urls),
+    path('login/', loginpage, name='login-page'),
+    path('logout/', logout, name='logout'),
     path('', home, name='home'),
     path('retorna1/', return1, name='retorna_1'),
-    path('retorna2/', return2, name='retorna_1'),
-    path('upload/', simple_upload, name='retorna_1'),
+    path('retorna2/', return2, name='retorna_2'),
+    path('upload/', simple_upload, name='upload'),
 ]
